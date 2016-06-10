@@ -17,6 +17,14 @@ var app = express();
 mongoose.connect('mongodb://localhost/library');
 app.use(express.static(__dirname + '/app'));   
 
+app.get('/books', function(request, response) {
+        Books.find(function(error, books) {
+            if (error)
+                response.send(error)
+            response.json(books);
+            console.log(books)
+        });
+    });
 
 // -----------------------------------------------------------------------------
 //  LISTENING
