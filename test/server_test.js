@@ -8,3 +8,12 @@ describe('SERVER -- Mocha', function() {
    expect(true).to.be.ok;
     });
 });
+
+
+describe('SERVER -- Server', function(){
+   it('should listen on port 7878', function() {
+    var server = require('../server.js');
+    expect(server.startServer()).to.equal(7878); 
+   });
+    
+});

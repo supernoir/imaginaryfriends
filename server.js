@@ -30,9 +30,16 @@ app.get('/books', function(request, response) {
 //  LISTENING
 // -----------------------------------------------------------------------------
 
-var port = process.env.PORT || 3030;
+var port = process.env.PORT || 7878;
 app.listen(port);
 console.log("App listening on port " + port);
 
+// --- Methods
 
+var startServer = function() {
+    return port
+};
 
+// --- Exports
+
+module.exports = { startServer: startServer};
