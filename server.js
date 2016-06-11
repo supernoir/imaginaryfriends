@@ -7,22 +7,47 @@ var http = require('http');
 var express  = require('express');
 var bodyParser = require('body-parser');
 var cors = require("cors");
-var mongoose = require('mongoose');   
+var db = require('mongoose');   
 var app = express();
+
 
 // -----------------------------------------------------------------------------  
 //  CONFIGURATION
 // -----------------------------------------------------------------------------
 
-mongoose.connect('mongodb://localhost/library');
-app.use(express.static(__dirname + '/app'));   
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
 
-app.get('/books', function(request, response) {
-        Books.find(function(error, books) {
+db.connect('mongodb://localhost/library');
+app.use(express.static(__dirname + '/app'));  
+
+// -----------------------------------------------------------------------------  
+//  MONGOOSE MODELS
+// -----------------------------------------------------------------------------
+
+
+var Characters = db.model('Characters', {
+    first_name : String,
+    middle_name : String,
+    last_name : String, 
+    gender : String,
+    origin : String,
+    age : String,
+});
+
+// -----------------------------------------------------------------------------  
+//  REST API
+// -----------------------------------------------------------------------------
+
+
+app.get('/characters', function(request, response) {
+        Characters.find(function(error, characters) {
             if (error)
                 response.send(error)
-            response.json(books);
-            console.log(books)
+            response.json(characters);
+            console.log("GET Characters: " + response.statusCode);
         });
     });
 
@@ -32,14 +57,20 @@ app.get('/books', function(request, response) {
 
 var port = process.env.PORT || 7878;
 app.listen(port);
-console.log("App listening on port " + port);
+console.log("Server listening on port " + port);
 
-// --- Methods
+// -----------------------------------------------------------------------------  
+//  EXPORTS
+// -----------------------------------------------------------------------------
+
 
 var startServer = function() {
     return port
 };
 
-// --- Exports
+var startDB = function() {
+    return app
+};
 
-module.exports = { startServer: startServer};
+
+module.exports = { startServer: startServer, startDB: startDB};
