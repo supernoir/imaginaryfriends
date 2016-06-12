@@ -10,13 +10,20 @@ fetch('http://localhost:7878/characters')
       }
 
       // Examine the text in the response  
-      response.json().then(function(data) {  
-        console.log(data);  
+      response.json().then(function(data) {
+          for (let i = 1; i <= data.length; i++) {
+              let characters = document.getElementById("characters").innerHTML = data[i];
+                    console.log(data[i]);
+            }  
+        console.log(data[1]);
       });  
     }  
   )  
   .catch(function(err) {  
     console.log('Fetch Error :-S', err);  
   });
+
+
+
 
   console.log(greet);
