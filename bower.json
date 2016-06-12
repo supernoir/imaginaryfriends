@@ -1,0 +1,27 @@
+{
+  "name": "imaginaryfriends",
+  "description": "Story-telling Toolbox for Writers and Creative-types",
+  "main": "app.js",
+  "authors": [
+    "Conny Kawohl"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "writing",
+    "toolbox",
+    "timeline",
+    "character"
+  ],
+  "homepage": "https://github.com/supernoir/imaginaryfriends",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "babel": "*"
+  }
+}
