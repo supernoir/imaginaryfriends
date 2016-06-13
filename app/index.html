@@ -6,6 +6,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="../node_modules/semantic-ui/dist/semantic.min.css">
     <script src="../bower_components/babel/browser.js"></script>
     <script src="app.js" type="text/babel"></script>
     
@@ -15,9 +16,18 @@
     <header class="header">
         <h1 id="logo">Imaginary Friends <span id="subhead">Core</span></h1>
     </header>
-    <div id="characters"></div>
-    <div id="react-content"></div>
+    <div class="container">
+        <div id="characters"></div>
+        
+        <div class="ui card">
+            <div class="content">
+                <a class="header" id="character_name"></a>
+                <div class="description" id="character_origin"></div>
+            </div>
+            <div class="extra content" id="character_age"></div>
+        </div>
 
+    </div>
     <footer class="footer">
         <p id="footer-body">&copy; 2016 -- <a href="#" class="footer-link">Bento Design</a></p>
     </footer>

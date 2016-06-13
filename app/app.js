@@ -1,5 +1,7 @@
 const greet = "App running with ES2015";
 
+
+
 fetch('http://localhost:7878/characters')  
   .then(  
     function(response) {  
@@ -11,11 +13,14 @@ fetch('http://localhost:7878/characters')
 
       // Examine the text in the response  
       response.json().then(function(data) {
-          for (let i = 1; i <= data.length; i++) {
-              let characters = document.getElementById("characters").innerHTML = data[i];
-                    console.log(data[i]);
+          for (let i = 0; i <= data.length; i++) {
+
+            let node = document.createElement("li");
+            let textnode = document.createTextNode(data[i].first_name + " " + data[i].last_name);
+            node.appendChild(textnode);
+            document.getElementById("character_name").appendChild(node);
+            console.log(data[i]);
             }  
-        console.log(data[1]);
       });  
     }  
   )  
