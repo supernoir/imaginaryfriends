@@ -1,5 +1,9 @@
 const greet = "App running with ES2015";
 
+ReactDOM.render(
+  <h1>Hello, world!</h1>,
+  document.getElementById('characters')
+);
 
 
 fetch('http://localhost:7878/characters')  
@@ -14,6 +18,7 @@ fetch('http://localhost:7878/characters')
       // Examine the text in the response  
       response.json().then(function(data) {
           for (let i = 0; i <= data.length; i++) {
+
 
             let node = document.createElement("li");
             let textnode = document.createTextNode(data[i].first_name + " " + data[i].last_name);

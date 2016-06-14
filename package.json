@@ -32,6 +32,8 @@
     "mocha": "^2.5.3",
     "mongoose": "^4.4.20",
     "node": "0.0.0",
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0",
     "semantic-ui": "^2.1.8"
   },
   "devDependencies": {
