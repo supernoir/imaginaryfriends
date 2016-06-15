@@ -15,21 +15,44 @@
 
   </head>
   <body>
-    <header class="header">
-        <h1 id="logo">Imaginary Friends <span id="subhead">Core</span></h1>
-    </header>
-    <div class="container">
-        <div id="characters"></div>
-        
-        <div class="ui card">
-            <div class="content">
-                <a class="header" id="character_name"></a>
-                <div class="description" id="character_origin"></div>
-            </div>
-            <div class="extra content" id="character_age"></div>
-        </div>
-
+    <div class="ui attached stackable menu">
+  <div class="ui container">
+    <a class="item">
+      <i class="home icon"></i> Home
+    </a>
+    <a class="item">
+      <i class="users icon"></i> Ensemble
+    </a>
+    <a class="item">
+      <i class="calendar icon"></i> Timeline
+    </a>
+    <div class="item">
+      <i class="marker icon"></i>Places
     </div>
+    <div class="right item">
+      <div class="ui input"><input type="text" placeholder="Search..."></div>
+    </div>
+  </div>
+</div>  
+
+<div class="ui container"><br>
+<div class="ui two item labeled icon menu">
+  <a class="active teal item">
+    <i class="grid layout icon"></i>
+    List Characters
+  </a>
+  <a class="item">
+    <i class="add user icon"></i>
+    Add Character
+  </a>
+</div>
+</div>
+
+<div class="ui raised very padded text container segment">
+    <h2 class="ui header">All Characters</h2>
+        <div id="component_characters"></div>
+</div>
+
     <footer class="footer">
         <p id="footer-body">&copy; 2016 -- <a href="#" class="footer-link">Bento Design</a></p>
     </footer>
