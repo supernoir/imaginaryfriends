@@ -1,6 +1,8 @@
 'use strict'
 
-let CharacterList = React.createClass({
+
+
+var CharacterList = React.createClass({
   getInitialState: function() {
     return {
       first_name: '',
@@ -11,9 +13,13 @@ let CharacterList = React.createClass({
     };
   },
 
+
   componentDidMount: function() {
-    this.serverRequest = $.get(this.props.source, function (result) {
-      let characterData = result[12];
+    this.serverRequest = $.get(this.props.source, function(result) {
+        var characterData = result.map(function(character){
+          return character
+        });
+      
       this.setState({
         first_name: characterData.first_name,
         last_name: characterData.last_name,
@@ -30,6 +36,7 @@ let CharacterList = React.createClass({
 
   render: function() {
     return (
+
       <div className="ui card">
         <div className="content">
           <a className="header">{this.state.first_name} {this.state.last_name} <i className={"" + this.state.gender + " icon"}></i></a>
@@ -42,7 +49,7 @@ let CharacterList = React.createClass({
   </div>
   <div className="extra content">
     <a>
-      <i classNam="user icon"></i>
+      <i className="user icon"></i>
       22 Relations
     </a>
   </div>
