@@ -4,8 +4,8 @@
 
 
 // MIRAGE Colors
-$mirage-primary: marine;
-$mirage-secondary: maroon;
+$mirage-primary: rgb(90,25,70);
+$mirage-secondary: rgb(200,0,60);
 $mirage-grey-80: rgb(50,50,50);
 $mirage-grey-60: rgb(100,100,100);
 $mirage-grey-40: rgb(150,150,150);
@@ -32,9 +32,12 @@ body{
 
 .container{
     margin: 20px;
+    padding: 20px;
     background: white;
     border-bottom: 3px solid $mirage-grey-40;
     display: flex;
+    flex-flow: wrap;
+    flex-direction: column;
     width: 900px;
     height: 600px;
 }
@@ -50,4 +53,38 @@ p{
 h1{
     font-size: 36px;
     color: $mirage-grey-60;
+    font-weight: 400;
 }
+
+h2{
+    font-size: 24px;
+    color: $mirage-grey-60;
+    font-weight: 700;
+
+}
+
+h3{
+    font-size: 18px;
+    color: $mirage-grey-60;
+    font-weight: 400;
+}
+
+h4{
+    font-size: 16px;
+    color: $mirage-grey-40;
+    font-weight: 400;
+}
+
+// GENERIC Links
+a{
+    color: $mirage-secondary;
+    text-decoration: none;
+
+    &:hover{
+        color: darken($color: $mirage-secondary, $amount: .4)
+    }
+    &:visited{
+        color: darken($color: $mirage-secondary, $amount: .2)
+    }
+}
+

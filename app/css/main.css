@@ -1,15 +1,25 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300,500,700,200,600);
+@import 'https://fonts.googleapis.com/css?family=Eczar:400,600,800';
 .nav {
   background: #5a1946;
   width: 100%;
   padding: 20px;
   height: 40px;
-  color: white; }
+  color: white;
+  border-bottom: 5px solid #c8003c; }
 
 .nav a {
-  font-size: 32px;
   color: white;
   text-decoration: none; }
+
+.logo {
+  font-family: 'Eczar', 'Georgia', 'Times New Roman', 'Times', serif;
+  font-size: 32px; }
+
+#logo-muted {
+  font-family: 'Lato', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  color: rgba(255, 255, 255, 0.4);
+  font-weight: 300; }
 
 html {
   font-family: "Lato", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
@@ -21,10 +31,15 @@ body {
 
 .container {
   margin: 20px;
+  padding: 20px;
   background: white;
   border-bottom: 3px solid #969696;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  -ms-flex-direction: column;
+      flex-direction: column;
   width: 900px;
   height: 600px; }
 
@@ -35,4 +50,28 @@ p {
 
 h1 {
   font-size: 36px;
-  color: #646464; }
+  color: #646464;
+  font-weight: 400; }
+
+h2 {
+  font-size: 24px;
+  color: #646464;
+  font-weight: 700; }
+
+h3 {
+  font-size: 18px;
+  color: #646464;
+  font-weight: 400; }
+
+h4 {
+  font-size: 16px;
+  color: #969696;
+  font-weight: 400; }
+
+a {
+  color: #c8003c;
+  text-decoration: none; }
+  a:hover {
+    color: #c6003b; }
+  a:visited {
+    color: #c7003c; }

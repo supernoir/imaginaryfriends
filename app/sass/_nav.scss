@@ -1,13 +1,32 @@
+@import 'https://fonts.googleapis.com/css?family=Eczar:400,600,800';
+
+
+$mirage-primary: rgb(90,25,70);
+$mirage-secondary: rgb(200,0,60);
+
 .nav{
-    background: rgb(90,25,70);
+    background: $mirage-primary;
     width: 100%;
     padding: 20px;
     height: 40px;
     color: white;
+    border-bottom: 5px solid $mirage-secondary;
 }
 
 .nav a{
-    font-size: 32px;
     color: white;
     text-decoration: none;
+}
+
+.logo{
+    font-family: 'Eczar', 'Georgia', 'Times New Roman', 'Times', serif;
+    font-size: 32px;
+
+
+}
+
+#logo-muted{
+    font-family: 'Lato', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    color: rgba(255,255,255,0.4);    
+    font-weight: 300;
 }
