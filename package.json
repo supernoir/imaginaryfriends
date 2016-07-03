@@ -25,6 +25,7 @@
   "dependencies": {
     "angular": "^1.5.6",
     "bower": "^1.7.9",
+    "bulma": "^0.1.0",
     "chai": "^3.5.0",
     "chai-http": "^3.0.0",
     "cors": "^2.7.1",
@@ -52,6 +53,7 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.3.1",
     "gulp-uglify": "^1.5.3",
+    "jshint": "^2.9.2",
     "nodemon": "^1.9.2",
     "tiny-lr": "^0.2.1"
   }

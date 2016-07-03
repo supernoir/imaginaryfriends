@@ -1,15 +1,53 @@
-@import url(https://fonts.googleapis.com/css?family=Catamaran:400,300,500,700,200,600);
-$primary-color: marine;
+// IMPORT external
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,500,700,200,600);
 
+
+
+// MIRAGE Colors
+$mirage-primary: marine;
+$mirage-secondary: maroon;
+$mirage-grey-80: rgb(50,50,50);
+$mirage-grey-60: rgb(100,100,100);
+$mirage-grey-40: rgb(150,150,150);
+$mirage-grey-20: rgb(200,200,200);
+
+// MIRAGE Fonts
+$mirage-copy: 'Lato', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+
+// IMPORT sass partials
+@import 'nav';
+
+// HTML
 html{
-    font-family: 'Catamaran', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    font-family: $mirage-copy;
 }
 
 body{
     margin: 0px;
     padding: 0px;
-    background: rgb(250,250,250);
-
+    background: rgb(245,245,245);
 }
 
+// Containers
 
+.container{
+    margin: 20px;
+    background: white;
+    border-bottom: 3px solid $mirage-grey-40;
+    display: flex;
+    width: 900px;
+    height: 600px;
+}
+
+// Typography
+
+p{
+    font-size: 14px;
+    line-height: 16px;
+    color: $mirage-grey-80;
+}
+
+h1{
+    font-size: 36px;
+    color: $mirage-grey-60;
+}

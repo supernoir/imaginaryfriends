@@ -1,8 +1,38 @@
-@import url(https://fonts.googleapis.com/css?family=Catamaran:400,300,500,700,200,600);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,500,700,200,600);
+.nav {
+  background: #5a1946;
+  width: 100%;
+  padding: 20px;
+  height: 40px;
+  color: white; }
+
+.nav a {
+  font-size: 32px;
+  color: white;
+  text-decoration: none; }
+
 html {
-  font-family: 'Catamaran', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; }
+  font-family: "Lato", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
 
 body {
   margin: 0px;
   padding: 0px;
-  background: #fafafa; }
+  background: whitesmoke; }
+
+.container {
+  margin: 20px;
+  background: white;
+  border-bottom: 3px solid #969696;
+  display: -ms-flexbox;
+  display: flex;
+  width: 900px;
+  height: 600px; }
+
+p {
+  font-size: 14px;
+  line-height: 16px;
+  color: #323232; }
+
+h1 {
+  font-size: 36px;
+  color: #646464; }

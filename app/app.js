@@ -60,5 +60,5 @@ var CharacterList = React.createClass({
 
 ReactDOM.render(
   <CharacterList source="http://localhost:7878/characters" />,
-  document.getElementById('component_characters')
+  document.getElementById('module_characters')
 );
