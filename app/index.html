@@ -6,21 +6,36 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/main.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <script   src="https://code.jquery.com/jquery-3.0.0.min.js"   integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0="   crossorigin="anonymous"></script>
     <script src="../bower_components/babel/browser.js"></script>
     <script src="app.js" type="text/babel"></script>
     
 
   </head>
   <body>
-    <header class="header">
-        <h1 id="logo">Imaginary Friends <span id="subhead">Core</span></h1>
-    </header>
+    <nav class="nav">
+      <a class="nav-item" href="#">
+        <i class="icon-rocket"></i> Mirage
+      </a>
+    </nav>
 
-    <div id="react-content"></div>
+  <div class="container">
 
-    <footer class="footer">
-        <p id="footer-body">&copy; 2016 -- <a href="#" class="footer-link">Bento Design</a></p>
-    </footer>
+    <section class="hero">
+      <h1>Character List</h1>
+      <h2>Here you will find all your Characters</h2>
+    </section>
 
+  <div class="content">
+    <h2>All Characters</h2>
+       <div id="module_characters"></div>
+  </div>
+
+  <footer class="footer">
+    <p>&copy; 2016 Mirage GmbH -- Terms & Conditions</p>
+  </footer>
+  
+  </div>
   </body>
 </html>
