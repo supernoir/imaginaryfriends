@@ -1,5 +1,6 @@
 // IMPORT external
-@import url(https://fonts.googleapis.com/css?family=Lato:400,300,500,700,200,600);
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,500,700,200,600);
+@import url('https://fonts.googleapis.com/css?family=Prata');
 
 
 
@@ -10,6 +11,8 @@ $mirage-grey-80: rgb(50,50,50);
 $mirage-grey-60: rgb(100,100,100);
 $mirage-grey-40: rgb(150,150,150);
 $mirage-grey-20: rgb(200,200,200);
+
+$mirage-tan: rgb(240,240,235);
 
 // MIRAGE Fonts
 $mirage-copy: 'Lato', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
@@ -25,7 +28,7 @@ html{
 body{
     margin: 0px;
     padding: 0px;
-    background: rgb(245,245,245);
+    background: $mirage-tan;
 }
 
 // Containers
@@ -139,6 +142,12 @@ p{
     color: $mirage-grey-80;
 }
 
+h1.super{
+    font-size: 42px;
+    color: $mirage-grey-40;
+    font-weight: 200;
+}
+
 h1{
     font-size: 36px;
     color: $mirage-grey-60;
@@ -182,4 +191,22 @@ a{
         color: darken($color: $mirage-secondary, $amount: .2)
     }
 }
+
+a.primary{
+    border: 1px solid $mirage-secondary;
+    padding: 10px;
+    font-weight: normal;
+    font-size: 14px;
+    color: $mirage-secondary;
+    background-color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+a.primary:hover{
+    border: 1px solid $mirage-secondary;
+    background-color: $mirage-secondary;
+    color: white;
+}
+
 

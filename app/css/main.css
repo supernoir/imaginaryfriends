@@ -1,4 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:400,300,500,700,200,600);
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,500,700,200,600);
+@import url("https://fonts.googleapis.com/css?family=Prata");
 @import 'https://fonts.googleapis.com/css?family=Prata';
 .nav {
   background: #5a1946;
@@ -17,6 +18,9 @@
   font-size: 32px;
   color: white; }
 
+.logo:hover {
+  color: white; }
+
 #logo-muted {
   font-family: 'Lato', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   color: rgba(255, 255, 255, 0.4);
@@ -28,7 +32,7 @@ html {
 body {
   margin: 0px;
   padding: 0px;
-  background: whitesmoke; }
+  background: #f0f0eb; }
 
 .container {
   margin: 20px;
@@ -118,6 +122,11 @@ p {
   line-height: 16px;
   color: #323232; }
 
+h1.super {
+  font-size: 42px;
+  color: #969696;
+  font-weight: 200; }
+
 h1 {
   font-size: 36px;
   color: #646464;
@@ -150,3 +159,18 @@ a {
     color: #c6003b; }
   a:visited {
     color: #c7003c; }
+
+a.primary {
+  border: 1px solid #c8003c;
+  padding: 10px;
+  font-weight: normal;
+  font-size: 14px;
+  color: #c8003c;
+  background-color: white;
+  border-radius: 6px;
+  cursor: pointer; }
+
+a.primary:hover {
+  border: 1px solid #c8003c;
+  background-color: #c8003c;
+  color: white; }
