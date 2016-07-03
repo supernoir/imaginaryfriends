@@ -1,4 +1,4 @@
-@import 'https://fonts.googleapis.com/css?family=Eczar:400,600,800';
+@import 'https://fonts.googleapis.com/css?family=Prata';
 
 
 $mirage-primary: rgb(90,25,70);
@@ -19,9 +19,12 @@ $mirage-secondary: rgb(200,0,60);
 }
 
 .logo{
-    font-family: 'Eczar', 'Georgia', 'Times New Roman', 'Times', serif;
+    font-family: 'Prata', 'Georgia', 'Times New Roman', 'Times', serif;
     font-size: 32px;
+    color: white;
+}
 
+.logo a:hover{
 
 }
 
@@ -30,3 +33,4 @@ $mirage-secondary: rgb(200,0,60);
     color: rgba(255,255,255,0.4);    
     font-weight: 300;
 }
+

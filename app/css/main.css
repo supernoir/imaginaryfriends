@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300,500,700,200,600);
-@import 'https://fonts.googleapis.com/css?family=Eczar:400,600,800';
+@import 'https://fonts.googleapis.com/css?family=Prata';
 .nav {
   background: #5a1946;
   width: 100%;
@@ -13,8 +13,9 @@
   text-decoration: none; }
 
 .logo {
-  font-family: 'Eczar', 'Georgia', 'Times New Roman', 'Times', serif;
-  font-size: 32px; }
+  font-family: 'Prata', 'Georgia', 'Times New Roman', 'Times', serif;
+  font-size: 32px;
+  color: white; }
 
 #logo-muted {
   font-family: 'Lato', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
@@ -33,7 +34,7 @@ body {
   margin: 20px;
   padding: 20px;
   background: white;
-  border-bottom: 3px solid #969696;
+  border-bottom: 3px solid #c8c8c8;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-flow: wrap;
@@ -42,6 +43,61 @@ body {
       flex-direction: column;
   width: 900px;
   height: 600px; }
+
+.section_hero {
+  border-bottom: 1px solid #c8c8c8;
+  width: 860px;
+  padding: 20px 0px; }
+
+.section_main {
+  border-bottom: 1px solid #c8c8c8;
+  width: 860px;
+  padding: 20px 0px; }
+
+.body_main {
+  display: -ms-flexbox;
+  display: flex;
+  wrap: nowrap;
+  width: auto; }
+
+.aside_main {
+  border-top: 1px solid #c8c8c8;
+  width: 240px;
+  margin: 0px 20px 0px 0px; }
+
+h5#aside_header {
+  text-transform: uppercase;
+  margin: 10px 0px 0px 0px; }
+
+h5#article_header {
+  text-transform: uppercase;
+  margin: 10px 0px 0px 0px; }
+
+.article_main {
+  width: 600px;
+  border-top: 1px solid #c8c8c8; }
+
+.card_deck {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row; }
+
+.aside_main_nav {
+  margin: 10px 0px;
+  padding: 0px;
+  list-style-type: none; }
+
+#aside_main_nav_item {
+  list-style-type: none; }
+
+.card {
+  width: 160px;
+  height: 220px;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #c8c8c8;
+  border-radius: 6px; }
 
 p {
   font-size: 14px;
@@ -66,7 +122,12 @@ h3 {
 h4 {
   font-size: 16px;
   color: #969696;
-  font-weight: 400; }
+  font-weight: 300; }
+
+h5 {
+  font-size: 12px;
+  color: #969696;
+  font-weight: normal; }
 
 a {
   color: #c8003c;

@@ -1,7 +1,5 @@
 'use strict'
 
-
-
 var CharacterList = React.createClass({
   getInitialState: function() {
     return {
@@ -37,9 +35,9 @@ var CharacterList = React.createClass({
   render: function() {
     return (
 
-      <div className="ui card">
-        <div className="content">
-          <a className="header">{this.state.first_name} {this.state.last_name} <i className={"" + this.state.gender + " icon"}></i></a>
+      <div className="card">
+        <div className="card_content">
+          <a className="header">Name: {this.state.first_name} {this.state.last_name} <i className={"" + this.state.gender + " icon"}></i></a>
     <div className="meta">
       <span className="date"><strong>Birthday</strong> {this.state.age}<br /><strong>Place of Origin</strong> {this.state.origin}</span>
     </div>

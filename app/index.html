@@ -9,8 +9,9 @@
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <script   src="https://code.jquery.com/jquery-3.0.0.min.js"   integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0="   crossorigin="anonymous"></script>
     <script src="../bower_components/babel/browser.js"></script>
-    <script src="app.js" type="text/babel"></script>
-    
+    <script src="../node_modules/react/dist/react.js"></script>
+    <script src="../node_modules/react-dom/dist/react-dom.js"></script>
+    <script src="app.js" type="text/babel"></script>    
 
   </head>
   <body>
@@ -22,21 +23,54 @@
     <header>
 
   <div class="container">
-    <section class="hero">
+    <section class="section_hero">
       <h1>Character List</h1>
       <h2>Here you will find all your Characters</h2>
     </section>
 
-    <section>
-      <header>
-        <h2>View Characters</h2>
+    <section class="section_main">
+      <header class="header_main">
+        <h2>My Characters</h2>
       </header>
-      <aside>
-        <ul
+      <div class="body_main">
+      <aside class="aside_main">
+        <h5 id="aside_header">Actions</h5>
+        <ul class="aside_main_nav">
+          <li class="aside_main_nav_item"><a href="#">View Characters</a></li>
+          <li class="aside_main_nav_item"><a href="#">Edit Characters</a></li>
+          <li class="aside_main_nav_item"><a href="#">Personality Wizard</a></li>
+        </ul>
       </aside>
-      <article>
-      <h3>Book: Nomad</h3>  
+
+      <article class="article_main">
+      <h5 id="article_header">Card View</b></h5>
+      
+      <div class="card_deck">
+      <div class="card">
+        <div class="card_header">
+          <a class="card_name">Harry Potter</a>
+          <p class="card_birthday"><strong>Birthday</strong> 12 May 1992</p>
+          <p class="card_origin"><strong>Origin</strong> Godric's Hollow</p>
+        </div>
+      <div class="card_body">
+      A young wizard who will save the World. And London.
+    </div>
+  </div>
+
+<div class="card">
+        <div class="card_header">
+          <a class="card_name">Hermione Granger</a>
+          <p class="card_birthday"><strong>Birthday</strong> 6 November 1994</p>
+          <p class="card_origin"><strong>Origin</strong> Manchester</p>
+        </div>
+      <div class="card_body">
+      The smartest witch in class, and <a href="#">Harry's</a> best friend.
+    </div>
+  </div>
+
+</div>
       </article>
+      </div>
     </section>
 
   <footer class="footer">
