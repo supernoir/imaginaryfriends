@@ -1,21 +1,11 @@
 'use strict'
 
+
 var CharacterList = React.createClass({
-  getInitialState: function() {
-    return {
-      first_name: '',
-      last_name: '',
-      age: '',
-      origin: '',
-      gender: ''    
-    };
-  },
-
-
+  
   componentDidMount: function() {
     this.serverRequest = $.get(this.props.source, function(result) {
-        var characterData = result.map(function(character){
-          return character
+         var characterData = result;
         });
       
       this.setState({
@@ -25,7 +15,7 @@ var CharacterList = React.createClass({
         origin: characterData.origin,
         gender: characterData.gender
       });
-    }.bind(this));
+    }.bind(this);
   },
 
   componentWillUnmount: function() {
@@ -34,23 +24,18 @@ var CharacterList = React.createClass({
 
   render: function() {
     return (
-
-      <div className="card">
+      <div className="card">{
+      characterData.map(function (character){
         <div className="card_content">
           <a className="header">Name: {this.state.first_name} {this.state.last_name} <i className={"" + this.state.gender + " icon"}></i></a>
-    <div className="meta">
-      <span className="date"><strong>Birthday</strong> {this.state.age}<br /><strong>Place of Origin</strong> {this.state.origin}</span>
-    </div>
-    <div className="description">
-      Part of the <a href="#">Nomad</a> Book
-    </div>
-  </div>
-  <div className="extra content">
-    <a>
-      <i className="user icon"></i>
-      22 Relations
-    </a>
-  </div>
+        <div className="meta">
+          <span className="date"><strong>Birthday</strong> {this.state.age}<br /><strong>Place of Origin</strong> {this.state.origin}</span>
+        </div> 
+      </div>
+      });
+      }
+
+
 </div>
     );
   }
