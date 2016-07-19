@@ -31,7 +31,7 @@ app.use(bodyParser.urlencoded({
   extended: true
 }));
 
-db.connect('mongodb://localhost/library');
+db.connect('mongodb://localhost:27017/library');
 app.use(express.static(__dirname + '/app'));  
 
 // -----------------------------------------------------------------------------  
@@ -54,12 +54,13 @@ var Characters = db.model('Characters', {
 
 
 app.get('/characters', function(request, response) {
-        Characters.find(function(error, characters) {
+/*        Characters.find(function(error, characters) {
             if (error)
-                response.send(error)
+                response.send(error)*/
+            var characters = [{'first_name':'Harry'}]    
             response.json(characters);
             console.log("GET Characters: " + response.statusCode);
-        });
+      //  });
     });
 
 // -----------------------------------------------------------------------------
