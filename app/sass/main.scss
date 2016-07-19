@@ -3,16 +3,22 @@
 @import url('https://fonts.googleapis.com/css?family=Prata');
 
 
-
-// MIRAGE Colors
+// MIRAGE Color Spectrum
 $mirage-primary: rgb(90,25,70);
 $mirage-secondary: rgb(200,0,60);
+$mirage-maroon: rgb(150, 10, 60);
+$mirage-orange: rgb(250, 90, 50);
+$mirage-yellow: rgb(255, 195, 0);
+$mirage-mint: rgb(220, 250, 160);
+$mirage-tan: rgb(240,240,235);
+
+// MIRAGE Greyscale
 $mirage-grey-80: rgb(50,50,50);
 $mirage-grey-60: rgb(100,100,100);
 $mirage-grey-40: rgb(150,150,150);
 $mirage-grey-20: rgb(200,200,200);
 
-$mirage-tan: rgb(240,240,235);
+
 
 // MIRAGE Fonts
 $mirage-copy: 'Lato', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
@@ -46,7 +52,7 @@ body{
 }
 
 .section_hero{
-    border-bottom: 1px solid $mirage-grey-20;
+    border-bottom: 1px solid $mirage-tan;
     width: 860px;
     padding: 20px 0px;
 }
@@ -192,7 +198,7 @@ a{
     }
 }
 
-a.primary{
+a.btn_primary{
     border: 1px solid $mirage-secondary;
     padding: 10px;
     font-weight: normal;
@@ -203,10 +209,26 @@ a.primary{
     cursor: pointer;
 }
 
-a.primary:hover{
+a.btn_primary:hover{
     border: 1px solid $mirage-secondary;
     background-color: $mirage-secondary;
     color: white;
 }
 
+a.btn_default{
+    border: 1px solid $mirage-grey-80;
+    padding: 10px;
+    font-weight: normal;
+    font-size: 14px;
+    color: $mirage-grey-80;
+    background-color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+a.btn_default:hover{
+    border: 1px solid $mirage-grey-20;
+    background-color: $mirage-grey-20;
+    color: darken($mirage-grey-80, .5);
+}
 
